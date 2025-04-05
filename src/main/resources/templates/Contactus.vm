@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Thank You for Contacting Us</title>
+</head>
+<body>
+  <h1>Hi, ${name}</h1>
+  <p>Thank you for contacting us through the Neoteric Method! We truly appreciate you reaching out and taking the time to connect with us.</p>
+  <p>Our team will review your message and get back to you as soon as possible. In the meantime, if you'd like to track your request or explore more, click the link below:</p>
+
+  <p>Thanks again,<br>The Team</p>
+</body>
+</html>

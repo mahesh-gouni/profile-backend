@@ -1,0 +1,11 @@
+package com.neo.website.neoContactUsEmail.model;
+
+import lombok.Data;
+
+@Data
+public class User {
+    private String name;
+    private String email;
+    private String mobile;
+    private String message;
+}

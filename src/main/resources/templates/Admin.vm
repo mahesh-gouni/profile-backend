@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Feedback Received</title>
+</head>
+<body>
+  <h2>Hi, ${name}</h2>
+  <p>You have received a new contact form submission through the Neoteric Method.</p>
+
+  <h3>User Details:</h3>
+  <ul>
+    <li><strong>Name:</strong> ${username}</li>
+    <li><strong>Email:</strong> ${useremail}</li>
+    <li><strong>Mobile:</strong> ${usermobile}</li>
+    <li><strong>Message:</strong> ${usermessage}</li>
+  </ul>
+
+  <p>Please reach out to the user if necessary.</p>
+
+  <p>Regards,<br>Neoteric Website Bot</p>
+</body>
+</html>
