@@ -1,22 +1,84 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>User Feedback Received</title>
+  <title>New Contact Submission</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f6f9;
+      margin: 0;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      background: linear-gradient(135deg, #70f1f8 0%, #3065d2 100%);
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.09);
+    }
+    .header {
+      background: rgba(255,255,255,0.08);
+      padding: 30px;
+      text-align: center;
+      color: #3065d2;
+    }
+    .content {
+      background: white;
+      padding: 40px;
+    }
+    h2 {
+      color: #3065d2;
+      margin: 0;
+      font-size: 28px;
+      font-weight: 300;
+    }
+    h3 {
+      color: #222;
+      border-bottom: 2px solid #70f1f8;
+      padding-bottom: 10px;
+      margin-top: 30px;
+    }
+    ul {
+      background: #eff6fc;
+      padding: 20px;
+      border-radius: 8px;
+      border-left: 4px solid #3065d2;
+    }
+    li {
+      margin: 10px 0;
+      font-size: 16px;
+    }
+    .footer {
+      background: #3065d2;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-  <h2>Hi, ${name}</h2>
-  <p>You have received a new contact form submission through the Neoteric Method.</p>
+  <div class="container">
+    <div class="header">
+      <h2>Hi, Mahesh Gouni</h2>
+    </div>
+    <div class="content">
+      <p>You have received a new contact submission.</p>
 
-  <h3>User Details:</h3>
-  <ul>
-    <li><strong>Name:</strong> ${username}</li>
-    <li><strong>Email:</strong> ${useremail}</li>
-    <li><strong>Mobile:</strong> ${usermobile}</li>
-    <li><strong>Message:</strong> ${usermessage}</li>
-  </ul>
+      <h3>User Details:</h3>
+      <ul>
+        <li><strong>Name:</strong> ${username}</li>
+        <li><strong>Email:</strong> ${useremail}</li>
+        <li><strong>Subject:</strong> ${subject}</li>
+        <li><strong>Message:</strong> ${usermessage}</li>
+      </ul>
 
-  <p>Please reach out to the user if necessary.</p>
-
-  <p>Regards,<br>Neoteric Website Bot</p>
+      <p>Please reach out to this person if necessary.</p>
+    </div>
+    <div class="footer">
+      <p>Regards,<br><strong>Your Personal Website Bot</strong></p>
+    </div>
+  </div>
 </body>
 </html>

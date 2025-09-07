@@ -10,8 +10,10 @@ import org.springframework.web.bind.annotation.*;
 import java.io.IOException;
 
 @RestController
-@RequestMapping("/api/neo")
+@RequestMapping("/api/profile")
+@CrossOrigin("*")
 public class ContactUsController {
+
     private final ContactUsService contactUsService;
 
     public ContactUsController(ContactUsService contactUsService) {

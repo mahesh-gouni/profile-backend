@@ -1,13 +1,96 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Thank You for Contacting Us</title>
+  <title>Thank You for Contacting Mahesh Gouni</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #a2d4fa 0%, #124e8c 100%);
+      margin: 0;
+      padding: 20px;
+      min-height: 100vh;
+    }
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      background: white;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+      animation: fadeIn 1s ease-in;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .header {
+      background: linear-gradient(135deg, #3065d2 0%, #70f1f8 100%);
+      padding: 40px;
+      text-align: center;
+      color: white;
+    }
+    .content {
+      padding: 40px;
+      text-align: center;
+    }
+    h1 {
+      margin: 0;
+      font-size: 32px;
+      font-weight: 400;
+    }
+    p {
+      font-size: 18px;
+      color: #2d3436;
+      line-height: 1.6;
+      margin: 20px 0;
+    }
+    .cta-button {
+      display: inline-block;
+      margin: 30px 0;
+      padding: 15px 30px;
+      background: linear-gradient(135deg, #70f1f8 0%, #3065d2 100%);
+      color: white;
+      text-decoration: none;
+      border-radius: 50px;
+      font-weight: bold;
+      font-size: 16px;
+      transition: transform 0.3s ease;
+      box-shadow: 0 5px 15px rgba(48, 101, 210, .3);
+    }
+    .cta-button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 25px rgba(48, 101, 210, .4);
+    }
+    .footer {
+      background: #124e8c;
+      color: white;
+      padding: 30px;
+      text-align: center;
+    }
+    .signature {
+      font-size: 20px;
+      font-weight: bold;
+      color: #3065d2;
+    }
+  </style>
 </head>
 <body>
-  <h1>Hi, ${name}</h1>
-  <p>Thank you for contacting us through the Neoteric Method! We truly appreciate you reaching out and taking the time to connect with us.</p>
-  <p>Our team will review your message and get back to you as soon as possible. In the meantime, if you'd like to track your request or explore more, click the link below:</p>
+  <div class="container">
+    <div class="header">
+      <h1>Hi, ${name}!</h1>
+    </div>
+    <div class="content">
+      <p>Thank you for contacting <strong>Mahesh Gouni</strong>! I truly appreciate you reaching out and sharing your thoughts.</p>
 
-  <p>Thanks again,<br>The Team</p>
+      <p>I will review your message and get back to you as soon as possible. If you'd like to track your request or explore more:</p>
+
+      <a href="#" class="cta-button">Track Your Request</a>
+
+      <p>Looking forward to assisting you!</p>
+    </div>
+    <div class="footer">
+      <p>Thanks again,<br><span class="signature">Mahesh Gouni</span></p>
+    </div>
+  </div>
 </body>
 </html>
