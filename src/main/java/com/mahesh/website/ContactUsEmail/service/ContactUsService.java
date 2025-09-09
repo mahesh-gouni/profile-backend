@@ -48,8 +48,8 @@ public class ContactUsService {
 
     private void sendVerificationEmailtoadmin(User user) {
         try {
-            String email = "venkatkollu23@gmail.com";
-            String adminName = "neo admin";
+            String email = "gounimahesh9000@gmail.com";
+            String adminName = "mahesh gouni";
             String subject = "Feedback from User";
 
             Map<String, Object> params = new HashMap<>();

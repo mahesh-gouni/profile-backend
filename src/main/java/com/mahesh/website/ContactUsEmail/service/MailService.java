@@ -47,7 +47,7 @@ public class MailService {
         File file = resource.getFile();
         String vmFolder = file.getPath();
 
-        String content = VelocityUtility.generateTemplate(vmFolder, vmFileName, context);
+        String content = VelocityUtility.generateTemplate("templates/" + vmFileName, context);
         sendHtmlMail(to, subject, content);
         log.info("MailTemplate sent to {}", to);
     }

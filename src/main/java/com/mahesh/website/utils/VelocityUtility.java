@@ -1,8 +1,5 @@
 package com.mahesh.website.utils;
 
-
-
-
 import lombok.experimental.UtilityClass;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.velocity.VelocityContext;
@@ -15,21 +12,20 @@ import java.util.Properties;
 @Slf4j
 public class VelocityUtility {
 
-    public static String generateTemplate(final String vmFolder,
-                                          final String vmFileName,
+    public static String generateTemplate(final String vmPath,
                                           final VelocityContext context) {
         try {
-            final Properties properties = new Properties();
-            properties.setProperty("file.resource.loader.class",
-                    "org.apache.velocity.runtime.resource.loader.FileResourceLoader");
-            properties.setProperty("file.resource.loader.path", vmFolder);
-            properties.setProperty("resource.loader", "file");
+            Properties properties = new Properties();
+            properties.setProperty("resource.loader", "classpath");
+            properties.setProperty("classpath.resource.loader.class",
+                    "org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader");
 
             VelocityEngine velocityEngine = new VelocityEngine(properties);
             velocityEngine.init();
 
             StringWriter writer = new StringWriter();
-            velocityEngine.mergeTemplate(vmFileName, "UTF-8", context, writer);
+            // vmPath should be like "templates/Contactus.vm"
+            velocityEngine.mergeTemplate(vmPath, "UTF-8", context, writer);
 
             return writer.toString();
         } catch (final Exception e) {
@@ -38,5 +34,3 @@ public class VelocityUtility {
         }
     }
 }
-
-
