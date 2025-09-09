@@ -1,22 +1,20 @@
-# Use a lightweight JDK image
-FROM eclipse-temurin:17-jdk-alpine
-
-# Set working directory
+# ---------- Build stage ----------
+FROM maven:3.8.5-openjdk-17 AS build
 WORKDIR /app
 
-# Copy Maven wrapper and pom.xml to download dependencies
+# Copy pom.xml and mvnw scripts first
+COPY pom.xml .
 COPY mvnw .
 COPY .mvn .mvn
-COPY pom.xml .
+
+# Ensure mvnw is executable
+RUN chmod +x mvnw
 
 # Pre-download dependencies (better caching)
 RUN ./mvnw dependency:go-offline -B
 
 # Copy the actual source code
-COPY src src
+COPY src ./src
 
-# Package the app
+# Package the jar
 RUN ./mvnw clean package -DskipTests
-
-# Run the Spring Boot application
-CMD ["java", "-jar", "target/*.jar"]
