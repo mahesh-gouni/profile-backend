@@ -12,7 +12,7 @@ import java.io.IOException;
 
 @RestController
 @RequestMapping("/api/profile")
-@CrossOrigin("*")
+@CrossOrigin("https://profile-frontend-nosz.onrender.com")
 @Slf4j
 public class ContactUsController {
 
