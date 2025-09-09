@@ -1,4 +1,4 @@
-package com.neo.website.neoContactUsEmail.model;
+package com.mahesh.website.ContactUsEmail.model;
 
 import lombok.Data;
 

@@ -1,8 +1,8 @@
-package com.neo.website.neoContactUsEmail.service;
+package com.mahesh.website.ContactUsEmail.service;
 
 
 
-import com.neo.website.utils.VelocityUtility;
+import com.mahesh.website.utils.VelocityUtility;
 import jakarta.mail.MessagingException;
 import jakarta.mail.internet.MimeMessage;
 import lombok.extern.slf4j.Slf4j;

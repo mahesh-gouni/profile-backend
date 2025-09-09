@@ -1,7 +1,7 @@
-package com.neo.website.neoContactUsEmail.controller;
+package com.mahesh.website.ContactUsEmail.controller;
 
-import com.neo.website.neoContactUsEmail.model.User;
-import com.neo.website.neoContactUsEmail.service.ContactUsService;
+import com.mahesh.website.ContactUsEmail.model.User;
+import com.mahesh.website.ContactUsEmail.service.ContactUsService;
 import jakarta.mail.MessagingException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

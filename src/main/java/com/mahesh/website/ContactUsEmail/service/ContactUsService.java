@@ -1,6 +1,6 @@
-package com.neo.website.neoContactUsEmail.service;
+package com.mahesh.website.ContactUsEmail.service;
 
-import com.neo.website.neoContactUsEmail.model.User;
+import com.mahesh.website.ContactUsEmail.model.User;
 import jakarta.mail.MessagingException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
